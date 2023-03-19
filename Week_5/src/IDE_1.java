@@ -17,12 +17,12 @@ public class IDE_1 {
         //Defining gas car variables
         String gas_car_name;
         double gas_car_payment;
-        double gas_car_gallon_cost;
+        double gas_car_gc;
         double gas_car_mileage;
         //Defining electric car variables
         String e_car_name;
         double e_car_payment;
-        double e_car_electricity_cost;
+        double e_car_ec;
         //Defining dual-used variables
         double miles_weekly;
         final double WEEKS_IN_MONTH = 4.3;
@@ -44,7 +44,7 @@ public class IDE_1 {
 
         //Cost per gallon for gas car
         System.out.println("Enter the cost of gas per gallon:");
-        gas_car_gallon_cost = input.nextDouble();
+        gas_car_gc = input.nextDouble();
 
         //Mileage
         System.out.println("Enter the average mileage the car is rated at:");
@@ -66,7 +66,7 @@ public class IDE_1 {
 
         //Cost per mile for electric car
         System.out.println("Enter the cost of electricity per mile:");
-        e_car_electricity_cost = input.nextDouble();
+        e_car_ec = input.nextDouble();
 
 
         //Introduction to use of dual-variable Miles Weekly
@@ -84,8 +84,8 @@ public class IDE_1 {
 
 
         //Costs per week of each
-        double GC_Costs = calc_gas_car_calculations(miles_weekly,gas_car_mileage,gas_car_gallon_cost);
-        double EC_Costs = calc_e_car_calculations(miles_weekly, e_car_electricity_cost);
+        double GC_Costs = calc_gas_car_calculations(miles_weekly,gas_car_mileage,gas_car_gc);
+        double EC_Costs = calc_e_car_calculations(miles_weekly, e_car_ec);
 
         //Monthly costs of each
         double GC_monthly_cost = GC_Costs*WEEKS_IN_MONTH + gas_car_payment;
@@ -99,7 +99,7 @@ public class IDE_1 {
 
 
 
-        
+
 
         //Output for this is what we have for gas car
         System.out.println("**************************");
