@@ -28,7 +28,7 @@ public class IDE_1 {
         final double WEEKS_IN_MONTH = 4.3;
 
 
-        //GAS CAR INPUTS
+
 
         //Start of output
         System.out.println("**************************");
@@ -50,7 +50,7 @@ public class IDE_1 {
         System.out.println("Enter the average mileage the car is rated at:");
         gas_car_mileage = input.nextDouble();
 
-        //ELECTRIC CAR INPUTS
+
 
         System.out.println("**************************");
         System.out.println("Now, since we have the details for the gas car, let's begin getting data for the electric car!");
@@ -80,7 +80,7 @@ public class IDE_1 {
         miles_weekly = input.nextInt();
 
 
-        //TIME-WISE PAY CALCULATIONS
+
 
 
         //Costs per week of each
@@ -98,7 +98,8 @@ public class IDE_1 {
         double ECvsGC_Costs_per_year = EC_yearly_cost-GC_yearly_cost;
 
 
-        //OUTPUTS
+
+        
 
         //Output for this is what we have for gas car
         System.out.println("**************************");
@@ -139,5 +140,7 @@ public class IDE_1 {
             double e_car_weekly_costs = miles_weekly * e_car_electricity_cost;
 
             return e_car_weekly_costs;
+
+
         }
     }
